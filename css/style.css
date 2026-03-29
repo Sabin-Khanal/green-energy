@@ -13,21 +13,21 @@
  * --color-white:      #ffffff
  */
 
-/* === GOOGLE FONTS ===
+/*  GOOGLE FONTS 
    Merriweather  → serif    → headings
    Lato          → sans-serif → body
    Fall-back: serif / sans-serif
 */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Lato:wght@300;400;700&display=swap');
 
-/* === RESET === */
+/* RESET */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* === ROOT VARIABLES === */
+/* ROOT VARIABLES */
 :root {
     --color-dark:    #0d2b1a;
     --color-primary: #1a6b3c;
@@ -47,7 +47,7 @@
     --lh:        1.5;   /* line-height between 1.4–1.6 */
 }
 
-/* === BASE === */
+/* BASE */
 html { font-size: 16px; }
 
 body {
@@ -72,10 +72,7 @@ img {
     height: auto;
 }
 
-/* ── CONTENT-WRAP ─────────────────────────────────────────────
-   HTML elements with bg-color expand full width;
-   content is centered and limited to max-width 60rem.
-──────────────────────────────────────────────────────────────*/
+/* CONTENT-WRAP */
 .content-wrap {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -83,7 +80,7 @@ img {
     padding-right: var(--gutter);
 }
 
-/* ── NAVBAR ───────────────────────────────────────────────── */
+/* NAVBAR */
 #navbar {
     width: 100%;
     background-color: var(--color-dark);
@@ -171,7 +168,7 @@ img {
     line-height: var(--lh);
 }
 
-/* ── MAIN CONTENT ─────────────────────────────────────────── */
+/* MAIN CONTENT */
 #main-content {
     width: 100%;
     background-color: var(--color-bg);
@@ -207,7 +204,7 @@ img {
     color: var(--color-white);
 }
 
-/* Active button — unique style (JS sets id="active-button") */
+/* Active button */
 #active-button {
     background-color: var(--color-primary);
     color: var(--color-white);
